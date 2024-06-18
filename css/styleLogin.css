@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "title";
+  src: url("../asset/PPEiko-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "text";
+  src: url("../asset/PPNeueMontreal-Medium.otf") format("opentype");
+}
+
+:root {
+  --primary: #663006;
+  --bg: #010101;
+  --title: "title", sans-serif;
+  --text: "text", sans-serif;
+  --white: #d6d6d6;
+}
+
+.class-input {
+  background-color: var(--bg);
+}
+
+.class-input .judul {
+  margin-top: 4em;
+  margin-left: 4em;
+  margin-right: 3em;
+  border-bottom: 0.1rem solid var(--primary);
+}
+
+.class-input .judul h3 {
+  font-family: var(--title);
+  color: var(--primary);
+}
+
+.class-input .judul p {
+  font-family: var(--text);
+  color: var(--white);
+}
+
+.input {
+  margin-top: 3em;
+  margin-left: 4em;
+}
+
+.input .username {
+  color: var(--white);
+  font-family: var(--text);
+}
+
+.input .username input {
+  all: unset;
+  border: none;
+  border-radius: 0.5em;
+  margin-top: 1em;
+  height: 2em;
+  width: 80%;
+  background-color: var(--white);
+  color: var(--bg);
+  padding-left: 0.5em;
+}
+
+.input .username input:focus {
+  border: 3px solid var(--primary);
+}
+.input .password {
+  margin-top: 2em;
+  color: var(--white);
+  font-family: var(--text);
+}
+
+.input .password input {
+  all: unset;
+  border: none;
+  border-radius: 0.5em;
+  margin-top: 1em;
+  height: 2em;
+  width: 80%;
+  background-color: var(--white);
+  color: var(--bg);
+  padding-left: 0.5em;
+}
+
+.input .password input:focus {
+  border: 3px solid var(--primary);
+}
+
+.input .button {
+  margin-top: 3em;
+  color: var(--white);
+}
+
+.input .button button {
+  width: 6em;
+  border-radius: 0.6em;
+  margin-top: 1.5em;
+  border: none;
+  width: 50%;
+  height: 2em;
+  margin-left: 3em;
+  font-weight: 400;
+}
+
+.input .button button:hover {
+  background-color: var(--primary);
+  color: var(--bg);
+}
